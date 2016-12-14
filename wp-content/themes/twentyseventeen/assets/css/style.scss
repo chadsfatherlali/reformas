@@ -1,0 +1,245 @@
+$main-color : #d1c5c1;
+$main-sec-color : rgba(50, 70, 77, 0.8);
+$main-hover : rgba(50, 70, 77, 1);
+.main-headling {
+  font-size: 1.4em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.primario p {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 48em){
+  .site-header .menu-scroll-down {
+    display: block;
+    padding: 1em;
+    position: inherit;
+    text-align: right;
+  }
+.main-navigation .menu li {
+  width: 19.75%;
+  text-align: center;
+  a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	transition: all 0.2s linear;
+	&:hover {
+	  background-color: $main-color;
+      color: #fff;
+	}
+  }
+}
+}
+
+@media screen and (max-width: 1200px){
+  .main-navigation .menu li {
+	width: 19.6%;
+  }
+}
+
+/*FOOTER*/
+.more-contact {
+  padding: 15px 0 0px 0;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  .margin-top{
+    margin-top: 10px;
+  }
+  p {
+    margin-bottom: 2px;
+  }
+}
+.social__net {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0px;
+  width: 100%;
+  li {
+    list-style: none;
+  }
+    a {
+      display: block;
+      background-color: $main-sec-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      transition: background-color 0.2s linear;
+      &:hover {
+        text-decoration: none;
+        background-color: $main-hover;
+      }
+      i {
+        font-size: 1.6em;
+        color: #fff;
+      }
+  }
+}
+
+
+ .marg-top {
+  margin-top: 10px;
+}
+
+ .mascara {
+   margin: 45px 0 45px 0;
+   height: 350px;
+   width: 100%;
+   overflow: hidden;
+   padding-right: 15px;
+   padding-left: 15px;
+   img {
+     width: 100%;
+   }
+ }
+
+
+ .box{
+   a {
+   display: flex;
+     align-items: center;
+     justify-content: center;
+   width: 100%;
+   height: 240px;
+   text-align: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin-bottom: 24px;
+     transition: all 0.2s linear;
+     position: relative;
+     color: #fff;
+     span {
+       color: #fff;
+       position: relative;
+       z-index: 100;
+       font-size: 1.7em;
+     }
+     &:hover{
+    color: #fff;
+       text-decoration: none;
+       &:before {
+       content: "";
+       position: absolute;
+       top: 0px;
+         left: 0;
+       display: block;
+       width: 100%;
+       height: 240px;
+         z-index: 10;
+       background-color: $main-sec-color;
+     }
+ }
+   }
+ }
+
+.box1 a{
+   background-image: url("http://localhost:8888/cocinasmusa/wp-content/uploads/2016/12/vgoiy1gzzyg-atlas-green-1024x683.jpg");
+ }
+
+.box2 a{
+  background-image: url("http://localhost:8888/cocinasmusa/wp-content/uploads/2016/12/vgoiy1gzzyg-atlas-green-1024x683.jpg");
+}
+
+.box3 a{
+  background-image: url("http://localhost:8888/cocinasmusa/wp-content/uploads/2016/12/vgoiy1gzzyg-atlas-green-1024x683.jpg");
+}
+.box4 a{
+  background-image: url("http://localhost:8888/cocinasmusa/wp-content/uploads/2016/12/vgoiy1gzzyg-atlas-green-1024x683.jpg");
+}
+.box5 a{
+  background-image: url("http://localhost:8888/cocinasmusa/wp-content/uploads/2016/12/vgoiy1gzzyg-atlas-green-1024x683.jpg");
+}
+
+.box6 a{
+  background-image: url("http://localhost:8888/cocinasmusa/wp-content/uploads/2016/12/vgoiy1gzzyg-atlas-green-1024x683.jpg");
+}
+
+.find {
+  li {
+    color: $main-sec-color;
+    list-style: none;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    a {
+      color: $main-sec-color;
+      &:hover {
+        color: $main-hover;
+        text-decoration: none;
+      }
+    }
+    i {
+      margin-right: 8px;
+      display: inline-block;
+      width: 37px;
+      color: #32464d;
+      font-size: 1.3em;
+    }
+  }
+}
+
+.relo {
+  margin-top: 25px;
+}
+
+.clear {
+  clear: both;
+}
+
+button, input[type="button"], input[type="submit"] {
+  background-color: $main-sec-color!important;
+  &:hover {
+    background-color: $main-hover!important;
+  }
+}
+
+.form-head {
+  margin-top: 35px;
+}
+
+
+.main-cata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  a {
+    display: flex;
+    height: 50px;
+    width: 182px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $main-sec-color;
+    &:hover {
+       background-color: $main-color;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and ( max-width: 800px ){
+
+  .main-cata {
+    a {
+      width: 122px;
+    }
+  }
+
+}
+
+.admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media,
+.admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media,
+.admin-bar.home.blog.has-header-image .custom-header-media,
+.admin-bar.home.blog.has-header-video .custom-header-media {
+  height: calc(100vh - 250px);
+}
+
