@@ -1,1 +1,12 @@
-{ "require": { "hhvm": "3.2.0" } }
+{
+    "name": "root/projectb",
+    "authors": [
+        {
+            "name": "Santiago Sánchez",
+            "email": "chadsfather@gmail.com"
+        }
+    ],
+    "require": {
+    	"hhvm": "3.2.0"
+    }
+}
