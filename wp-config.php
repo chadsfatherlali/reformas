@@ -20,23 +20,24 @@
 
 $url = parse_url(getenv('DATABASE_URL') ? getenv('DATABASE_URL') : getenv('CLEARDB_DATABASE_URL'));
 
-var_dump($url);
-die;
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('WP_CACHE', true); //Added by WP-Cache Manager
 define( 'WPCACHEHOME', '/Applications/MAMP/htdocs/proyectb/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
-define('DB_NAME', 'proyectb');
+//define('DB_NAME', 'proyectb');
+define('DB_NAME', trim($url['path'], '/'));
 
 /** MySQL database username */
-define('DB_USER', 'root');
+//define('DB_USER', 'root');
+define('DB_USER', $url['user']);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root');
+//define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', $url['pass']);
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
+//define('DB_HOST', $url['host']);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
