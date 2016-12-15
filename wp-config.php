@@ -89,6 +89,12 @@ define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
+
+define('WP_SITEURL', 'http://' . $_SERVER["HTTP_HOST"]. '/');
+ 
+/** This is the URL your visitors will see */
+define('WP_HOME', 'http://' . $_SERVER["HTTP_HOST"]);
+
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
